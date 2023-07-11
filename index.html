@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form">
+            <div class="form__item">
+                <label for="name">Tên</label>
+                <input name="name" id="name" type="text">
+                <span class="form__item__error-msg">*Tên không thể bỏ trống</span>
+            </div>
+            <div class="form__item">
+                <label for="email">Email</label>
+                <input name="email" id="email" type="text" >
+                <span class="form__item__error-msg">*Nhập email của bạn</span>
+            </div>
+            <div class="form__item">
+                <label for="password">Mật khẩu</label>
+                <input name="password" id="password" type="text">
+                <span class="form__item__error-msg">*Mật khẩu tối thiểu 8 ký tự</span>
+            </div>
+            <div class="form__item">
+                <label for="passwordConfirm">Nhập lại mật khẩu</label>
+                <input name="passwordConfirm" id="passwordConfirm" type="text">
+                <span class="form__item__error-msg">Mật khẩu không khớp</span>
+            </div>
+            <button class="btn btn-submit">Submit</button>
+        </div>
+    </div>
+
+    <script src="/index.js"></script>
+</body>
+</html>
